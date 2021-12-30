@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang='ko'>
+  <head>
+	 <meta charset="UTF-8">
+    <title>유튜버를 위한 웹사이트</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/bijou.min.css">
+	<script src="jquery-3.4.1.js"></script>
+    <style type='text/css'>
+      body{
+        margin-top:60px;
+      }
+      .light{
+        background:#CCC;'
+        color:#333;
+      }
+      .dark{
+        background:#333;
+        color:#CCC;
+		font-weight:2000;
+      }
+      .grid{
+        text-align:center;
+        font-size:10px;
+      }
+      .banner{
+        text-align:center;
+        padding:10px 0;
+      }
+      .table{
+        margin-bottom:35px;
+      }
+      .banner button{
+        margin-top:7px;
+      }
+      .divider{
+        width:100%;
+        background:#CCC;
+        height:1px;
+        margin:25px 0;
+      }
+	  .small_title{
+        font-weight:2000;
+        color:#333;
+        margin-bottom:10px;
+      }
+      .explainer{
+        font-weight:2000;
+        color:#AAA;
+        margin-bottom:10px;
+      }
+      .button{
+      	margin-bottom:30px;
+      }
+    </style>
+    <script>
+      !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+      arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+      d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+      insertBefore(d,q)}(window,document,'script','_gs');
+
+      _gs('GSN-340356-F');
+	  
+	  function open_Table(data){
+		  var test = document.test ;
+		  
+		  test.submit();
+		  location.href = "./Table";
+		  }
+
+
+    </script>
+  </head>
+  <body>
+    <div class='navbar fixed'>
+      <div class='container'>
+        <h4 class='pull-left'>2019 Database</h4>
+        <ul class='pull-right'>
+          <li><a >201502720 허용준</a></li>
+          <li><a >201701936 박지아</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class='container'>
+      
+      <div class='banner row'>
+        <div class='span twelve'>
+          <h4>100만 Youtube Creator가 되는 법</h4>
+        </div>
+      </div>
+      
+      <h4 class='small_title'>카테고리 별 조회수 순위(2018)</h4>
+      <div class='grid'>
+        <div class='row'>
+          <div class='span Entertainment dark'>Entertainment</div>
+        </div>
+        <div class='row'>
+          <div class='span Music light'>Music</div>
+        </div>
+        <div class='row'>
+          <div class='span People dark'>People</div>
+        </div>
+        <div class='row'>
+          <div class='span Film light'>Film</div>
+        </div>
+        <div class='row'>
+          <div class='span Gaming dark'>Gaming</div>
+        </div>
+		 <div class='row'>
+          <div class='span Education light'>Education</div>
+        </div>
+        <div class='row'>
+          <div class='span News light'>News</div>
+        </div>
+		<div class='row'>
+          <div class='span Comedy dark'>Comedy</div>
+        </div>
+		 <div class='row'>
+          <div class='span Howto light'>Howto</div>
+        </div>
+        <div class='row'>
+          <div class='span Sports dark'>Sports</div>
+        </div>
+        <div class='row'>
+          <div class='span Autos dark'>Autos</div>
+        </div>
+		<div class='row'>
+          <div class='span Tech dark'>Tech</div>
+        </div>
+		<div class='row'>
+          <div class='span Travel light'>Travel</div>
+        </div>
+		<div class='row'>
+          <div class='span Animals dark'>Animals</div>
+        </div>
+		<div class='row'>
+          <div class='span Nonprofits light'>Nonprofits</div>
+        </div>
+		<div class='row'>
+          <div class='span Shows dark'>Shows</div>
+        </div>
+		<div class='row'>
+          <div class='span Movies light'>Movies</div>
+        </div>
+		<div class='row'>
+          <div class='span Trailers dark'>Trailers</div>
+        </div>
+      </div>
+
+
+      
+      
+      <div class='divider'></div>
+      <h4 class='small_title'>카테고리 별 세부정보</h4>
+	  <br>
+	  <form name = "test" action = "./Table" method = "get">
+	  <input type="button" value="영화/애니메이션" class='button danger large' onclick="open_Table()" ><br>
+	  </form>
+	  <button class='button primary large'onclick="open_Table()">자동차</button><br>
+	  <button class='button success large'onclick="open_Table()">음악</button><br>
+      <a class='button one large' href = "Table?category=영화">영화/애니메이션</a>
+
+
+	  <div class='divider'></div>
+      <h4 class='explainer'>Copyright by 허용준</h4>
+      <h6 class='explainer'>충남대학교 전파정보통신공학과 데이터베이스 텀프로젝트</h6>
+      </br></br></br>
+    </div>
+  </body>
+</html>

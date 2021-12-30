@@ -1,0 +1,24 @@
+﻿<!doctype html>
+	<!-- KCPIT -->
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Simple Web</title>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+	<style>
+		* { font-family: 'Godo', 'Sans-serif'; }
+	</style>
+</head>
+  <body>
+    <div id="contain">
+      <div id="title">
+        <h1>2019 데이터베이스 텀프로젝트</h1>
+		  <div id="text">
+		  100만 Youtube Creator가 되는 법
+		  </div>
+		  <button class="btn-5" type ="button" onclick="location.href='main.html'">GO!</button>
+		</div>
+	  </div>
+</body>
+</html>

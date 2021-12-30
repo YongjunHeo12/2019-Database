@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>유튜버를 위한 웹사이트</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/bijou.min.css">
+    <style type='text/css'>
+      body{
+        margin-top:60px;
+      }
+      .light{
+        background:#CCC;'
+        color:#333;
+      }
+      .dark{
+        background:#333;
+        color:#CCC;
+		font-weight:2000;
+      }
+      .grid{
+        text-align:center;
+        font-size:10px;
+      }
+      .banner{
+        text-align:center;
+        padding:10px 0;
+      }
+      .table{
+        margin-bottom:35px;
+      }
+      .banner button{
+        margin-top:7px;
+      }
+      .divider{
+        width:100%;
+        background:#CCC;
+        height:1px;
+        margin:25px 0;
+      }
+      .explainer{
+        font-weight:2000;
+        color:#AAA;
+        margin-bottom:10px;
+      }
+      button{
+      	margin-bottom:10px;
+      }
+    </style>
+    <script language="javascript">
+      !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+      arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+      d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+      insertBefore(d,q)}(window,document,'script','_gs');
+
+      _gs('GSN-340356-F');
+     
+    </script>
+  </head>
+  <body >
+    <div class='navbar fixed'>
+      <div class='container'>
+        <a href="main" ><h4 class='pull-left'>2019 Database</h4></a>
+        <ul class='pull-right'>
+          <li><a>201502720 허용준</a></li>
+          <li><a>201701936 박지아</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class='container'>
+      
+      
+      <h4 style="text-align: center;">{{category}}</h4><br>
+      <h5 style="text-align: center;">영상 upload 예정 시간: {{publish_time}}시,  태그: {{tag}}</h5>
+      
+   
+       <br><br><br>
+       {% if category == "Film/Animation" %}
+       업로드시간-조회수 관계<br>
+       <img src="static\data_mining\1_Film_Animation\publish_timeviews.PNG"><br>
+       업로드시간-좋아요수 관계<br>
+       <img src="static\data_mining\1_Film_Animation\publish_timelikes.PNG"><br>
+       업로드시간-싫어요수 관계<br>
+       <img src="static\data_mining\1_Film_Animation\publish_timedislikes.PNG"><br>
+       {% if publish_time == "1" %}
+       해당 시간에 올리는 것을 추천드립니다! 
+       {% endif%}
+        {% if publish_time == "2" %}
+       해당 시간에 올리는 것을 추천드립니다!       
+       {% endif%}
+        {% if publish_time == "3" %}
+        해당 시간에 올리는 것을 추천드립니다!       
+        {% endif%}
+        {% if publish_time == "4" %}
+       해당 시간에 올리는 것을 추천드립니다!      
+       {% endif%}
+        {% if publish_time == "5" %}
+       해당 시간에 올리는 것을 추천드립니다!       
+       {% endif%}
+        {% if publish_time == "6" %}
+       해당 시간에 올리는 것을 추천드립니다!      
+       {% endif%}
+        {% if publish_time == "7" %}
+       해당 시간에 올리는 것을 추천드립니다!        
+       {% endif%}
+        {% if publish_time == "8" %}
+       해당 시간에 올리는 것을 추천드립니다!      
+       {% endif%}
+        {% if publish_time == "9" %}
+       해당 시간에 올리는 것을 추천드립니다!        
+       {% endif%}
+        {% if publish_time == "10" %}
+       해당 시간에 올리는 것을 추천드립니다!       
+       {% endif%}
+        {% if publish_time == "11" %}
+       해당 시간에 올리는 것을 추천드립니다!      
+       {% endif%}
+        {% if publish_time == "12" %}
+       해당 시간에 올리는 것을 추천드립니다!        
+       {% endif%}
+        {% if publish_time == "13" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..     
+       {% endif%}
+        {% if publish_time == "14" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..       
+       {% endif%}
+        {% if publish_time == "15" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..        
+       {% endif%}
+        {% if publish_time == "16" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "17" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "18" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       {% if publish_time == "19" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       {% if publish_time == "20" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       {% if publish_time == "21" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       {% if publish_time == "22" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..
+       대신 좋아요수는 높게 나올 가능성이 있습니다.    
+       {% endif%}
+       {% if publish_time == "23" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       {% if publish_time == "24" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       <br>
+       영화 카테고리는 1~12시에 올린 영상이 13~24시에 올린 영상보다 대체로 조회수가 높게 나옵니다.<br>
+       또한 좋아요수는 조회수와 대체로 비례하며 22시에 올린 영상은 조회수 대비 좋아요수가 높습니다.<br>
+       싫어요수는 조회수, 좋아요수와 큰 관계가 없습니다.<br>
+       <br><br><br>
+       <br>
+       TOP20태그-조회수 관계<br>
+       <img src="static\data_mining\1_Film_Animation\top20tag_views.PNG"><br>
+       TOP20태그-좋아요수 관계<br>
+       <img src="static\data_mining\1_Film_Animation\top20tag_likes.PNG"><br>
+       TOP20태그-싫어요수 관계<br>
+       <img src="static\data_mining\1_Film_Animation\top20tag_dislikes.PNG"><br>
+       {% if tag == "영화" %}
+        {{tag}}는 {{tag_cnt_1[0]}}개의 영상에서 사용되었습니다.
+       {% endif%}
+       {% if tag == "헬로카봇" %}
+        {{tag}}은 {{tag_cnt_1[1]}}개의 영상에서 사용되었습니다.
+       {% endif%}
+       {% if tag == "블리치" %}
+        {{tag}}는 {{tag_cnt_1[2]}}개의 영상에서 사용되었습니다.
+       {% endif%}
+       {% if tag == "공룡" %}
+        {{tag}}은 {{tag_cnt_1[3]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "bleach" %}
+        {{tag}}는 {{tag_cnt_1[4]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "공룡메카드" %}
+        {{tag}}는 {{tag_cnt_1[5]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "메카드" %}
+        {{tag}}는 {{tag_cnt_1[6]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "소피루비" %}
+        {{tag}}는 {{tag_cnt_1[7]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "리뷰" %}
+        {{tag}}는 {{tag_cnt_1[8]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "마블" %}
+        {{tag}}은 {{tag_cnt_1[9]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "장난감" %}
+        {{tag}}은 {{tag_cnt_1[10]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "어벤져스" %}
+        {{tag}}는 {{tag_cnt_1[11]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "애니메이션" %}
+        {{tag}}은 {{tag_cnt_1[12]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "원피스" %}
+        {{tag}}는 {{tag_cnt_1[13]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "시즌2" %}
+        {{tag}}는 {{tag_cnt_1[14]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "터닝메카드" %}
+        {{tag}}는 {{tag_cnt_1[15]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "영화리뷰" %}
+        {{tag}}는 {{tag_cnt_1[16]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "인피니티" %}
+        {{tag}}는 {{tag_cnt_1[17]}}개의 영상에서 사용되었습니다.
+       {% endif%} 
+       {% if tag == "베이블레이드" %}
+        {{tag}}는 {{tag_cnt_1[18]}}개의 영상에서 사용되었습니다.
+       {% endif%}     
+       {% if tag == "예고편" %}
+        {{tag}}은 {{tag_cnt_1[19]}}개의 영상에서 사용되었습니다.
+       {% endif%}      
+          <br> <br> <br>
+       표본데이터 정보<br> 
+       기간: 2017/02/12 ~ 2018/06/13<br>
+       튜플 수: 2200개<br>            
+       {% endif %}
+       {% if category == "Music" %}
+       업로드시간-조회수 관계<br>
+       <img src="static\data_mining\10_music\publish_timeviews.PNG"><br>
+       업로드시간-좋아요수 관계<br>
+       <img src="static\data_mining\10_music\publish_timelikes.PNG"><br>
+       업로드시간-싫어요수 관계<br>
+       <img src="static\data_mining\10_music\publish_timedislikes.PNG"><br>
+       {% if publish_time == "1" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "2" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "3" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+        {% endif%}
+        {% if publish_time == "4" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "5" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "6" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "7" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "8" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "9" %}
+       해당 시간에 올리는 것을 추천드립니다!
+       또한 좋아요수도 많이 나올것으로 예상됩니다!        
+       {% endif%}
+        {% if publish_time == "10" %}
+       해당 시간에 올리는 것을 추천드립니다!       
+       {% endif%}
+        {% if publish_time == "11" %}
+       해당 시간에 올리는 것을 추천드립니다!      
+       {% endif%}
+        {% if publish_time == "12" %}
+       해당 시간에 올리는 것을 추천드립니다!        
+       {% endif%}
+        {% if publish_time == "13" %}
+       해당 시간에 올리는 것을 추천드립니다! 
+       {% endif%}
+        {% if publish_time == "14" %}
+       해당 시간에 올리는 것을 추천드립니다! 
+       {% endif%}
+        {% if publish_time == "15" %}
+       해당 시간에 올리는 것을 추천드립니다! 
+       {% endif%}
+        {% if publish_time == "16" %}
+       해당 시간에 올리는 것을 추천드립니다! 
+       {% endif%}
+        {% if publish_time == "17" %}
+       해당 시간에 올리는 것을 추천드립니다! 
+       {% endif%}
+        {% if publish_time == "18" %}
+       해당 시간에 올리는 것을 추천드립니다! 
+       {% endif%}
+       {% if publish_time == "19" %}
+       해당 시간에 올리는 것을 추천드립니다! 
+       {% endif%}
+       {% if publish_time == "20" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       {% if publish_time == "21" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       {% if publish_time == "22" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..
+       대신 좋아요수는 높게 나올 가능성이 있습니다.    
+       {% endif%}
+       {% if publish_time == "23" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       {% if publish_time == "24" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       <br>
+       음악 카테고리는 9~19시에 올린 영상이 20~8시에 올린 영상보다 대체로 조회수가 높게 나옵니다.<br>
+       좋아요수는 조회수와 연관성이 없으며 9시에 올린 영상은 조회수 대비 좋아요수가 높습니다.<br>
+       싫어요수는 조회수와 비례관계가 있으나 좋아요수가 많을경우 싫어요수는 상대적으로 낮은 경향이 있습니다.<br>
+       <br><br><br>
+       TOP20태그-조회수 관계<br>
+       <img src="static\data_mining\10_music\top20tag_views.PNG"><br>
+       TOP20태그-좋아요수 관계<br>
+       <img src="static\data_mining\10_music\top20tag_likes.PNG"><br>
+       TOP20태그-싫어요수 관계<br>
+       <img src="static\data_mining\10_music\top20tag_dislikes.PNG"><br>
+       {% if tag == "TWICE" %}
+        {{tag}}는 {{tag_cnt_10[0]}}개의 영상에서 사용되었습니다.
+       {% endif%}
+       {% if tag == "트와이스" %}
+        {{tag}}는 {{tag_cnt_10[1]}}개의 영상에서 사용되었습니다.
+       {% endif%}
+       {% if tag == "bts" %}
+        {{tag}}는 {{tag_cnt_10[2]}}개의 영상에서 사용되었습니다.
+       {% endif%}
+       {% if tag == "뮤비" %}
+        {{tag}}는 {{tag_cnt_10[3]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "Heart" %}
+        {{tag}}는 {{tag_cnt_10[4]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "MV" %}
+        {{tag}}는 {{tag_cnt_10[5]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "Shaker" %}
+        {{tag}}는 {{tag_cnt_10[6]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "하트셰이커" %}
+        {{tag}}는 {{tag_cnt_10[7]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "BTS" %}
+        {{tag}}는 {{tag_cnt_10[8]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "뮤직비디오" %}
+        {{tag}}는 {{tag_cnt_10[9]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "방탄소년단" %}
+        {{tag}}은 {{tag_cnt_10[10]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "Music" %}
+        {{tag}}은 {{tag_cnt_10[11]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "Video" %}
+        {{tag}}는 {{tag_cnt_10[12]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "Love" %}
+        {{tag}}는 {{tag_cnt_10[13]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "is" %}
+        {{tag}}는 {{tag_cnt_10[14]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "kpop" %}
+        {{tag}}은 {{tag_cnt_10[15]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "티저" %}
+        {{tag}}는 {{tag_cnt_10[16]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "What" %}
+        {{tag}}은 {{tag_cnt_10[17]}}개의 영상에서 사용되었습니다.
+       {% endif%} 
+       {% if tag == "teaser" %}
+        {{tag}}는 {{tag_cnt_10[18]}}개의 영상에서 사용되었습니다.
+       {% endif%}     
+       {% if tag == "music" %}
+        {{tag}}은 {{tag_cnt_10[19]}}개의 영상에서 사용되었습니다.
+       {% endif%} 
+       
+       <br> <br> <br>
+       표본데이터 정보<br> 
+       기간: 2017/02/12 ~ 2018/06/13<br>
+       튜플 수: 1825개<br>    
+       {% endif %}
+       {% if category == "Gaming" %}
+       업로드시간-조회수 관계<br>
+       <img src="static\data_mining\20_games\publish_timeviews.PNG"><br>
+       업로드시간-좋아요수 관계<br>
+       <img src="static\data_mining\20_games\publish_timelikes.PNG"><br>
+       업로드시간-싫어요수 관계<br>
+       <img src="static\data_mining\20_games\publish_timedislikes.PNG"><br>
+       {% if publish_time == "1" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "2" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "3" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+        {% endif%}
+        {% if publish_time == "4" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "5" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "6" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "7" %}
+       해당 시간에 올리는 것을 추천드립니다!       
+       {% endif%}
+        {% if publish_time == "8" %}
+       해당 시간에 올리는 것을 추천드립니다!       
+       {% endif%}
+        {% if publish_time == "9" %}
+       해당 시간에 올리는 것을 추천드립니다!            
+       {% endif%}
+        {% if publish_time == "10" %}
+       해당 시간에 올리는 것을 매우 추천드립니다!       
+       {% endif%}
+        {% if publish_time == "11" %}
+       해당 시간에 올리는 것을 매우 추천드립니다!       
+       {% endif%}
+        {% if publish_time == "12" %}
+       해당 시간에 올리는 것을 매우 추천드립니다!       
+       {% endif%}
+        {% if publish_time == "13" %}
+       해당 시간에 올리는 것을 매우 추천드립니다!       
+       {% endif%}
+        {% if publish_time == "14" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "15" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "16" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "17" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+        {% if publish_time == "18" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       {% if publish_time == "19" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       {% if publish_time == "20" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       {% if publish_time == "21" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       {% if publish_time == "22" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..
+       대신 좋아요수는 높게 나올 가능성이 있습니다.    
+       {% endif%}
+       {% if publish_time == "23" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       {% if publish_time == "24" %}
+       해당 시간에 올리는 것을 추천드리지 않습니다..    
+       {% endif%}
+       <br>
+       게임 카테고리는 7~13시에 올린 영상이 14~6시에 올린 영상보다 대체로 조회수가 높게 나옵니다.<br>
+       특히 10~13시 사이에는 조회수가 매우 높게 나오는 영상들이 많이 분포하고 있습니다.<br>
+       좋아요수는 조회수와 비례하며 10~13시에 올린 영상은 조회수 대비 좋아요수가 높습니다.<br>
+       싫어요수는 조회수와 좋아요수에 비례합니다.
+       <br><br><br>
+       TOP20태그-조회수 관계<br>
+       <img src="static\data_mining\20_games\top20tag_views.PNG"><br>
+       TOP20태그-좋아요수 관계<br>
+       <img src="static\data_mining\20_games\top20tag_likes.PNG"><br>
+       TOP20태그-싫어요수 관계<br>
+       <img src="static\data_mining\20_games\top20tag_dislikes.PNG"><br>
+        {% if tag == "라이더" %}
+        {{tag}}는 {{tag_cnt_20[0]}}개의 영상에서 사용되었습니다.
+       {% endif%}
+       {% if tag == "rider" %}
+        {{tag}}는 {{tag_cnt_20[1]}}개의 영상에서 사용되었습니다.
+       {% endif%}
+       {% if tag == "게임" %}
+        {{tag}}은 {{tag_cnt_20[2]}}개의 영상에서 사용되었습니다.
+       {% endif%}
+       {% if tag == "도티" %}
+        {{tag}}는 {{tag_cnt_20[3]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "테드" %}
+        {{tag}}는 {{tag_cnt_20[4]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "클래시로얄" %}
+        {{tag}}은 {{tag_cnt_20[5]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "마인크래프트" %}
+        {{tag}}는 {{tag_cnt_20[6]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "버그판" %}
+        {{tag}}은 {{tag_cnt_20[7]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "김재원" %}
+        {{tag}}은 {{tag_cnt_20[8]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "고수" %}
+        {{tag}}는 {{tag_cnt_20[9]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "오버워치" %}
+        {{tag}}는 {{tag_cnt_20[10]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "키우기" %}
+        {{tag}}는 {{tag_cnt_20[11]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "overwatch" %}
+        {{tag}}는 {{tag_cnt_20[12]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "클로얄" %}
+        {{tag}}은 {{tag_cnt_20[13]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "game" %}
+        {{tag}}은 {{tag_cnt_20[14]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "kpop" %}
+        {{tag}}은 {{300[15]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "트위치" %}
+        {{tag}}는 {{tag_cnt_20[16]}}개의 영상에서 사용되었습니다.
+       {% endif%}       
+       {% if tag == "mobile" %}
+        {{tag}}은 {{tag_cnt_20[17]}}개의 영상에서 사용되었습니다.
+       {% endif%} 
+       {% if tag == "먹방;" %}
+        {{tag}}은 {{tag_cnt_20[18]}}개의 영상에서 사용되었습니다.
+       {% endif%}     
+       {% if tag == "보겸;" %}
+        {{tag}} {{tag_cnt_20[19]}}개의 영상에서 사용되었습니다.
+       {% endif%} 
+         <br> <br> <br>
+       표본데이터 정보<br> 
+       기간: 2017/02/12 ~ 2018/06/13<br>
+       튜플 수: 1392개<br>
+       {% endif %}
+
+       
+       
+     
+     
+       <div class='divider'></div>
+      <h4 class='explainer'>Copyright by 허용준, 박지아</h4>
+      <h6 class='explainer'>충남대학교 전파정보통신공학과 데이터베이스 텀프로젝트</h6>
+      </br></br></br>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>InnerXXX계열속성20.html</title>
+    <script>
+        function fnWrite(flag) {
+            var span = document.getElementById('span');
+            if (flag == 'H') {
+                span.innerHTML = '<strong>진하게</strong>';
+            }
+            else {
+                span.innerText = '<strong>진하게</strong>';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 id="h2">inner계열 속성 얻기</h2>
+    <input type="button" value="시작태그와 종료태그사이에 있는값 얻기"
+           onclick="alert(document.getElementById('h2').innerHTML)" />
+    <input type="button" value="innerHTML" onclick="fnWrite('H')" />
+    <input type="button" value="innerText" onclick="fnWrite('T')" />
+    <span id="span">텍스트</span>
+</body>
+</html>
