@@ -1,2 +1,18 @@
 # 2019Database
-2019Database Youtube analysis
+
+install package
+-------
+
+    pip install flask
+    pip install pandas
+    
+install sqlite3
+-----
+    python
+    from app import db
+    db.create_all()
+
+
+run
+--------
+    flask run
